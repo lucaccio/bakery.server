@@ -1,0 +1,308 @@
+2021-10-08T14:04:39.462Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:04:39.520Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:07:17.390Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:07:17.427Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:45:01.875Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:45:01.915Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:45:08.929Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit 10
+
+2021-10-08T14:46:10.410Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:46:10.448Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:46:14.786Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit 10
+
+2021-10-08T14:46:47.241Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:46:47.278Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:46:48.177Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:46:48.212Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:46:49.165Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:46:49.206Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:46:52.079Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:46:52.117Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:01.194Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:01.232Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:14.691Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:14.728Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:15.806Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:15.844Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:17.736Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:17.773Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:21.151Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:21.190Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:27.858Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit ${props.limit}
+
+2021-10-08T14:47:37.895Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:37.932Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:39.232Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:39.270Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:42.941Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:42.979Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:47:49.409Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit `${props.limit}`
+
+2021-10-08T14:48:20.586Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:48:20.624Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:48:24.955Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:48:24.993Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:48:32.931Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  10
+
+2021-10-08T14:48:43.816Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:48:43.854Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:48:47.393Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T14:49:10.283Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:49:10.321Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:49:29.012Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:49:29.052Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:49:33.408Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:49:33.446Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:49:37.404Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:49:37.441Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:49:42.354Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T14:50:29.050Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:50:29.088Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:50:32.944Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T14:50:53.039Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:50:53.077Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:50:56.059Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:50:56.095Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:50:57.606Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:50:57.645Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:51:12.688Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T14:52:04.911Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:52:04.949Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:52:07.539Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:52:07.577Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:52:13.113Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:52:13.150Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:52:15.455Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:52:15.492Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:52:17.983Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T14:54:15.366Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:54:15.405Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:54:18.547Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:54:18.584Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:54:59.810Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T14:56:25.661Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:56:25.699Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:58:10.978Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T14:58:28.437Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:58:28.475Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:58:29.676Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:58:29.713Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:58:31.537Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:58:31.574Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:58:34.064Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T14:59:01.334Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:59:01.371Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:59:05.907Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:59:05.945Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T14:59:09.922Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T15:02:03.371Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T15:02:34.059Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:02:34.096Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:02:35.617Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T15:02:52.237Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:02:52.274Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:03:53.900Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:03:53.939Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:03:55.268Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:03:55.304Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:03:56.656Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:03:56.694Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:03:59.667Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:03:59.704Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:04:51.147Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:04:51.185Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:04:53.909Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:04:53.946Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:04:57.758Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T15:05:12.185Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:12.223Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:14.861Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T15:05:27.954Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:27.994Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:35.383Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:35.421Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:50.809Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:50.846Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:51.956Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:51.995Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:53.723Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:05:53.760Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:10:02.219Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:10:02.256Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:10:48.846Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:10:48.884Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:10:52.145Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  5
+
+2021-10-08T15:11:27.906Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:11:27.944Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:11:29.168Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:11:29.208Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:11:30.391Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:11:30.429Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:11:32.426Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:11:32.464Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:11:53.759Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  1
+
+2021-10-08T15:25:19.968Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:25:20.005Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:25:21.206Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:25:21.244Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:25:28.989Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:25:29.030Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:25:33.046Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  1
+
+2021-10-08T15:25:55.103Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:25:55.142Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:26:10.921Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:26:15.030Z Executing (default): select  o.ID as ID,   o.ID_titolo_bancario,  o.data_operazione,           tb.descrizione as tipo_titolo ,          o.contanti ,         o.importo_titolo,          o.numero_titolo,          o.ID_conto_corrente,          u.denominazione_stampa as sede,           o.data_operazione,           c.caratura,           c.kt,          ob.ID_caratura,           ob.lista_oggetti,          ob.peso from operations as o           inner join offices as u on u.ID=o.ID_sede          inner join details_operations as d on o.ID=d.ID_operation         inner join objects as ob on ob.ID=d.ID_object         inner join carats as c on c.ID=ob.ID_caratura         left join titoli_bancari as tb on tb.ID_titolo_bancario=o.ID_titolo_bancario        left join banche as b on b.ID_banca=o.ID_conto_corrente          order by o.data_operazione DESC        limit  1
+
+2021-10-08T15:26:28.061Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:26:29.260Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:26:29.297Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:26:35.574Z Executing (default): SELECT 1+1 AS result
+
+2021-10-08T15:26:36.713Z Executing (default): SELECT 1+1 AS result
+

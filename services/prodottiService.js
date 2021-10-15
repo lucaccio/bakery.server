@@ -2,10 +2,10 @@ const { sequelize }  = require('../configs/sequelize');
 
 const{QueryTypes} = require('sequelize')
 
-const elencoTitoli = async function(props) {
+const getAll = async function(props) {
 
 
-		const sql = "SELECT  * FROM titoli_bancari"
+		const sql = "SELECT  * FROM prodotti"
 
 
         const _results = await sequelize.query(sql,{
@@ -17,4 +17,4 @@ const elencoTitoli = async function(props) {
 
 }
 
-module.exports = { elencoTitoli }
+module.exports = { getAll }

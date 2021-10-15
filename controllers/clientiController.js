@@ -5,7 +5,7 @@ const { DateTime } = require("luxon");
  
 const logger =  reqlib('/libs/logger'); 
 
-const operationsService = require('../services/operationsService')
+const service = require('../services/clientiService')
 
 
 // logga sql sequelize
@@ -17,8 +17,8 @@ const logga = (msg) => {
 }
 
 
-const getTodayOperations = async function(req, res, next) {  
-    var list = await operationsService.getOperations();
+const getAll = async function(req, res, next) {  
+    var list = await service.getAll();
     res.json({
      count: list.length,
      message : list,
@@ -27,4 +27,4 @@ const getTodayOperations = async function(req, res, next) {
  }
 
  
-module.exports = {getTodayOperations}
+module.exports = {getAll}

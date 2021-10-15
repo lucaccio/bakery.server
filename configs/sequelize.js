@@ -108,9 +108,9 @@ const sequelizeTest = new Sequelize(
 const connection = async () => {
     try {
         await sequelize.authenticate();
-        console.log('DB connection in [GOLDMANAGER] server has been established successfully.');
+     //   console.log('DB connection in [GOLDMANAGER] server has been established successfully.');
     //    await sequelizeTest.authenticate();
-     //   console.log(`DB connection in [${process.env.NODE_ENV}] server mode has been established successfully.`);
+       console.log(`DB connection in [${process.env.MYSQL_MASTER_HOST}] server mode has been established successfully.`);
     } catch (error) {
         console.error('Unable to connect to the databases:', error);
     }

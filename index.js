@@ -7,18 +7,14 @@ var express = require('express');
 const cors = require('cors')
 const clienti = require('./routes/clientiRoute')
 const prodotti = require('./routes/prodottiRoute')
+const giornaliera = require('./routes/giornalieraRoute')
 var app = express();
 
 app.use(express.json());
 app.use(cors()); 
 app.use(clienti);
 app.use( prodotti);
-
-app.post('/api/v1/giornaliera', (req, res) => {     
-    res.json({
-        message: req.body
-    })
-});
+app.use(giornaliera);
 
 
 

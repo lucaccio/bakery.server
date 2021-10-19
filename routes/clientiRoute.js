@@ -14,8 +14,10 @@ app.get('/api/v1/clienti', async (req, res, next) => {
       })   
  });
 
-app.get('/api/v1/clienti/prodotti/:id', async (req, res, next) => {
-   var list = await clientiService.getAllWithProduct(req.params.id)
+app.get('/api/v1/clienti/prodotti/:id/date/:date', async (req, res, next) => {
+
+   var list = await clientiService.getAllWithProduct(req.params.id, req.params.date)
+
    var data = new Date();
     res.json({
         timestamp: data.getTime(),
